@@ -1,0 +1,20 @@
+{
+  "name": "aitest",
+  "version": "0.0.1",
+  "main": "./app/server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "python-shell": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "sucrase": "^3.34.0"
+  }
+}
